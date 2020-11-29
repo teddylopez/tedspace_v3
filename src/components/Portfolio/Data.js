@@ -85,7 +85,7 @@ export const portfolioObjSeven = {
   thumbnail: require('../../images/thumbnails/teddygrams-thumb.png').default,
   desc: "teddygrams is a image sharing application that was built using React. I also incorporated Redux into the project to manage component state.",
   tech: ["React", "Redux"],
-  url: "",
+  url: false,
   git: "https://github.com/teddylopez/teddygrams"
 }
 

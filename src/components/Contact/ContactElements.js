@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  padding: 5% 0;
   height: 800px;
-  background: url("/images/nats_win.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
-  background-color: red;
   overflow: hidden;
 `
 

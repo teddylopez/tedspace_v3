@@ -5,6 +5,10 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+#interests {
+  margin-top: -500px;
+}
+
 @-webkit-keyframes FloatingColors {
     0%{background-position:0% 97%}
     50%{background-position:100% 4%}
