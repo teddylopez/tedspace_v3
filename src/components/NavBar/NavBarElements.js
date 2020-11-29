@@ -37,11 +37,11 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 0 #000;
-
 `;
 
 export const MobileIcon = styled.div`
   display: none;
+  filter:drop-shadow(1px 1px 1px black);
 
   @media screen and (max-width: 768px) {
     display: inline-table;

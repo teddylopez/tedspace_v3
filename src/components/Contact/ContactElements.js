@@ -27,6 +27,7 @@ export const ContactForm = styled.form`
 `
 
 export const HiddenBtn = styled.button`
+  display: none;
 `
 
 export const ContactBtn = styled.button`

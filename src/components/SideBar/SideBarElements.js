@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { useLocation } from 'react-router-dom'
-import { FaTimes } from "react-icons/fa";
+import { CgSmileSad } from "react-icons/cg";
 
 export const SideBarContainer = styled.aside`
   position: fixed;
@@ -18,14 +18,14 @@ export const SideBarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled(CgSmileSad)`
   color: #fff;
 `;
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
+  top: 1.3rem;
+  right: 3rem;
   background: transparent;
   font-size: 2rem;
   cursor: pointer;

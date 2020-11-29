@@ -15,14 +15,10 @@ function SideBar({isOpen, toggle}) {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
-      <SideBarWrapper>
         <SideBarMenu>
-            <SideBarRoute to="/" onClick={toggle}>tedlopez</SideBarRoute>
-            <SideBarRoute to="/portfolio" onClick={toggle}>portfolio</SideBarRoute>
+          <SideBarRoute to="/" onClick={toggle}>tedlopez</SideBarRoute>
+          <SideBarRoute to="/portfolio" onClick={toggle}>portfolio</SideBarRoute>
         </SideBarMenu>
-      </SideBarWrapper>
-      <SideBtnWrap>
-      </SideBtnWrap>
     </SideBarContainer>
   );
 }

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { FaBars } from "react-icons/fa";
+import { GiFullMotorcycleHelmet } from "react-icons/gi";
 import {animateScroll as scroll} from "react-scroll"
 import { useLocation } from 'react-router-dom'
 import {
@@ -40,7 +40,7 @@ function NavBar({toggle}) {
         <NavBarContainer>
           <NavLogo to="/" onClick={toggleHome}>tedlopez</NavLogo>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <GiFullMotorcycleHelmet />
           </MobileIcon>
           { !location.pathname.includes("portfolio") ?
             <NavMenu>

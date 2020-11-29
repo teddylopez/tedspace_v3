@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -18,14 +17,14 @@ export const HeroContainer = styled.div`
     left:0;
     bottom:0;
     right:0;
-    /* background: linear-gradient(
+    background: linear-gradient(
       180deg,
       rgba(0,0,0,0.2), 0%,
       rgba(0,0,0,0.0) 100%
       ),
       linear-gradient(
       180deg, rgba(0,0,0,0.5) 0%,
-      transparent 100%); */
+      transparent 100%);
     z-index: 2;
   }
 `
@@ -41,6 +40,7 @@ export const HeroBg = styled.div`
   overflow: hidden;
 
   @media screen and (max-width:768px) {
+    /* z-index: 100; */
     background: linear-gradient(230deg, #4b8cf9, #4f4bf9, #f9544b, #f9c04b, #f94b7f, #4bf98f);
     background-size: 1200% 1200%;
 
@@ -57,6 +57,10 @@ export const VideoBg = styled.video`
   -o-object-fit:cover:
   object-fit:cover;
   background:#232a34;
+
+  @media screen and (max-width:950px) {
+    display: none;
+  }
 
   @media screen and (max-width:768px) {
     display: none;
@@ -90,21 +94,22 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
   font-family: 'Permanent Marker', cursive;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  margin-top:24px;
   color:#fff;
   font-size:24px;
   text-align:center;
   max-width:600px;
 
   @media screen and (max-width:768px) {
-    font-size:24px;
-    line-height: 1;
+    margin-top: -10rem;
+    font-size: 55px;
+    line-height: 0.8;
     transform: rotate(-9deg);
   }
 
   @media screen and (max-width:480px) {
-    font-size:55px;
-    line-height: 1;
+    margin-top: -10rem;
+    font-size: 55px;
+    line-height: 0.8;
     transform: rotate(-9deg);
   }
 `
@@ -113,14 +118,4 @@ export const HeroBtnWrapper = styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
-`
-
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left:8px;
-  font-size: 20px;
-`
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left:8px;
-  font-size: 20px;
 `

@@ -5,7 +5,7 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: 'About me',
   headline: 'TED LÓPEZ',
-  description: "Software engineer and web developer with frontend and backend experience. Supporting baseball research & development, healthcare, defense, technology, and venture capital industries.",
+  description: "Software engineer and web developer supporting baseball research & development, healthcare, defense, technology, and venture capital industries.",
   imgStart: false,
   img: require('../../images/trophy.jpg').default,
   alt: 'car',

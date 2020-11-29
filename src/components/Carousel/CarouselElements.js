@@ -3,6 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 
 export const CarouselContainer = styled.div`
   height: 500px;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     height: 300px;

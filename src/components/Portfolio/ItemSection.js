@@ -7,6 +7,7 @@ function ItemSection({portfolio_object}) {
   const[{portfolioItem}, dispatch] = useStateValue();
 
   const setPortfolioItem = () => {
+
     dispatch({
       type: "SET_PORTFOLIO_ITEM",
       item: {
