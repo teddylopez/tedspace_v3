@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Link as LinkR } from "react-router-dom";
 
 export const CarouselContainer = styled.div`
+  background-color: white;
   height: 1000px;
   overflow-x: hidden;
 

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 600px;
+  background-color: white;
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;

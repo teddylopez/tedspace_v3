@@ -5,6 +5,10 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+body {
+  background-color: #101522;
+}
+
 #interests {
   margin-top: -500px;
 }

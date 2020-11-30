@@ -3,9 +3,10 @@ import {Link} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
+  padding: 20px;
+  margin-bottom: 0;
 `
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,14 +15,6 @@ export const FooterWrap = styled.div`
   margin: 0 auto;
 `
 
-export const FooterLinksContainer = styled.div`
-display: flex;
-justify-content: center;
-
-  @media screen and (max-width: 820px) {
-    padding-top: 32px;
-  }
-`
 export const FooterLinksWrapper = styled.div`
   display: flex;
 
@@ -43,7 +36,6 @@ export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
   text-align: left;
   width: 160px;
   box-sizing: border-box;
@@ -58,13 +50,11 @@ export const FooterLinkItems = styled.div`
 
 export const FooterLinkTitle = styled.h1`
   font-size: 14px;
-  margin-bottom: 16px;
 `
 
 export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
-  margin-bottom: 0.5rem;
   font-size: 14px;
 
   &:hover {
@@ -82,7 +72,6 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items:center;
   max-width: 1100px;
-  margin: 40px auto 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -94,16 +83,14 @@ export const SocialLogo = styled(Link)`
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
   font-weight: bold;
 `
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin-bottom: 16px;
 `
 
 export const SocialIcons = styled.div`
