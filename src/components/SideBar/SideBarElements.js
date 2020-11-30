@@ -9,10 +9,6 @@ export const SideBarContainer = styled.aside`
   width: 100%;
   height: 100%;
   background: #0d0d0d;
-  display: grid;
-  align-items: center;
-  top: 0;
-  left: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
@@ -34,21 +30,22 @@ export const Icon = styled.div`
 
 export const SideBarWrapper = styled.div`
   color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 80%;
 `;
 
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 export const SideBarMenu = styled.ul`
   display: flex:
   flex-direction: column;
   text-align: center;
-
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6,60px)
-  }
 `;
 
 export const SideBarRoute = styled(LinkR)`
