@@ -40,14 +40,13 @@ export const HeroBg = styled.div`
   overflow: hidden;
 
   @media screen and (max-width:768px) {
-    /* z-index: 100; */
-    background: linear-gradient(230deg, #4b8cf9, #4f4bf9, #f9544b, #f9c04b, #f94b7f, #4bf98f);
-    background-size: 1200% 1200%;
+    background: linear-gradient(226deg, #0d47a1, #ff1744);
+    background-size: 400% 400%;
 
-    -webkit-animation: FloatingColors 20s ease infinite;
-    -moz-animation: FloatingColors 20s ease infinite;
-    -o-animation: FloatingColors 20s ease infinite;
-    animation: FloatingColors 20s ease infinite;
+    -webkit-animation: Siren 1s ease infinite;
+    -moz-animation: Siren 1s ease infinite;
+    -o-animation: Siren 1s ease infinite;
+    animation: Siren 1s ease infinite;
   }
 `
 
