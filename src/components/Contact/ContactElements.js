@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  height: 800px;
+  height: 600px;
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
@@ -28,6 +28,7 @@ export const HiddenBtn = styled.button`
 `
 
 export const ContactBtn = styled.button`
+  margin-top: 20px;
   border-radius: 50px;
   background: #ff1744;
   white-space: nowrap;
@@ -55,12 +56,12 @@ export const ContactInputField = styled.input`
 export const ContactInputTextArea = styled.textarea`
   margin: 10px 0;
   padding: 5px;
-  width: 800px;
-  height: 400px;
+  width: 400px;
+  height: 150px;
   outline: none;
 
   @media screen and (max-width: 768px) {
     width: 230px;
-    height: 300px;
+    height: 200px;
   }
 `
