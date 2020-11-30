@@ -34,7 +34,7 @@ function Contact() {
         <ContactInputField type="text" name="from_name" placeholder="Name" />
         <ContactInputField type="text" name="from_email" placeholder="Email" />
         <ContactInputField type="text" name="subject" placeholder="Subject" />
-        <ContactInputTextArea name="subject" placeholder="..."/>
+        <ContactInputTextArea name="message" placeholder="..."/>
         <ContactBtn type="submit">Send Complaint</ ContactBtn>
       </ContactForm>
     </ContactContainer>
