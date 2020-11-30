@@ -1,12 +1,17 @@
 import React, {useEffect, useHistory} from 'react'
 import {ItemPhoto, ItemTitle, ItemSubtitle, ItemWrapper} from "./PortfolioElements"
 import { useStateValue } from "../StateProvider";
+import ReactGa from "react-ga"
 
 function ItemSection({portfolio_object}) {
 
   const[{portfolioItem}, dispatch] = useStateValue();
 
   const setPortfolioItem = () => {
+    ReactGa.event({
+      category: "Clicked on portfolio project",
+      action: `${portfolio_object.name}`
+    })
 
     dispatch({
       type: "SET_PORTFOLIO_ITEM",

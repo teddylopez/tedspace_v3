@@ -5,10 +5,17 @@ import Portfolio from "./pages/portfolio"
 import ItemPage from "./components/Portfolio/ItemPage"
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import ScrollToTop from "./components/ScrollToTop"
+import ReactGa from "react-ga"
 
 function App() {
+
+  useEffect(() => {
+    ReactGa.initialize(`${process.env.REACT_APP_GA_APP}`)
+    ReactGa.pageview(window.location.pathname + window.location.search)
+  }, [])
+
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
