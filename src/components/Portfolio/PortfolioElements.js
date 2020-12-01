@@ -160,6 +160,16 @@ export const PortfolioTechItem = styled.li``;
 
 export const LinkContainer = styled.a``;
 
+export const PBtnContainer = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    display: flex;
+    margin: 40px auto;
+  }
+`;
+
 export const PortfolioRepoLink = styled.a`
   text-decoration: none;
   margin-bottom: 10px;

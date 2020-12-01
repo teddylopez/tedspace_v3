@@ -1,14 +1,31 @@
-import React, { useEffect } from 'react'
-import Footer from "../../components/Footer"
-import {useStateValue} from "../StateProvider"
-import {ItemContainer, ContainerRow, ContainerColumn, PortfolioItemImg, PortfolioItemDetails, PortfolioItemDesc, PortfolioItemTitle, PortfolioItemSubtitle, PortfolioTechList, PortfolioTechItem, LinkContainer, PortfolioRepoLink, PageWrapper} from "./PortfolioElements"
+import React, { useEffect } from "react";
+import Footer from "../../components/Footer";
+import { useStateValue } from "../StateProvider";
+import {
+  ItemContainer,
+  ContainerRow,
+  ContainerColumn,
+  PortfolioItemImg,
+  PortfolioItemDetails,
+  PortfolioItemDesc,
+  PortfolioItemTitle,
+  PortfolioItemSubtitle,
+  PortfolioTechList,
+  PortfolioTechItem,
+  LinkContainer,
+  PortfolioRepoLink,
+  PageWrapper,
+  PBtnContainer,
+} from "./PortfolioElements";
+
+import { NavBtnLink } from "../NavBar/NavBarElements";
 
 function ItemPage() {
-  const [{portfolioItem}, dispatch] = useStateValue();
+  const [{ portfolioItem }, dispatch] = useStateValue();
 
   // Use local storage for item if portfolio object is null:
   useEffect(() => {
-    const storage_data = JSON.parse(localStorage.getItem("portfolio-item"))
+    const storage_data = JSON.parse(localStorage.getItem("portfolio-item"));
 
     if (storage_data && !portfolioItem) {
       dispatch({
@@ -23,17 +40,19 @@ function ItemPage() {
           desc: storage_data.desc,
           tech: storage_data.tech,
           url: storage_data.url,
-          git: storage_data.git
-        }
-      })
+          git: storage_data.git,
+        },
+      });
     }
-
-  }, [])
+  }, []);
 
   // Set local storage to portfolio item:
   useEffect(() => {
-    window.localStorage.setItem("portfolio-item", JSON.stringify(portfolioItem))
-  })
+    window.localStorage.setItem(
+      "portfolio-item",
+      JSON.stringify(portfolioItem)
+    );
+  });
 
   return (
     <>
@@ -41,33 +60,41 @@ function ItemPage() {
         <ItemContainer>
           <ContainerRow>
             <LinkContainer href={portfolioItem?.url} target="_blank">
-              <PortfolioItemImg src={portfolioItem?.image} to={portfolioItem?.url} />
+              <PortfolioItemImg
+                src={portfolioItem?.image}
+                to={portfolioItem?.url}
+              />
             </LinkContainer>
             <PortfolioItemDetails>
               <ContainerColumn>
-              <PortfolioItemTitle>{portfolioItem?.title}</PortfolioItemTitle>
-              <PortfolioItemSubtitle>{portfolioItem?.subtitle}</PortfolioItemSubtitle>
-              <PortfolioRepoLink href={portfolioItem?.git} target="_blank">
-                View the source code here
-              </PortfolioRepoLink>
-              <PortfolioTechList>
-                Technology Used:
-                {portfolioItem?.tech.map((item, i) => {
-                   console.log("Entered");
-                   return (<PortfolioTechItem key={i}>{item}</PortfolioTechItem>)
-                })}
-              </PortfolioTechList>
-              <PortfolioItemDesc>
-                {portfolioItem?.desc}
-              </PortfolioItemDesc>
+                <PortfolioItemTitle>{portfolioItem?.title}</PortfolioItemTitle>
+                <PortfolioItemSubtitle>
+                  {portfolioItem?.subtitle}
+                </PortfolioItemSubtitle>
+                <PortfolioRepoLink href={portfolioItem?.git} target="_blank">
+                  View the source code here
+                </PortfolioRepoLink>
+                <PortfolioTechList>
+                  Technology Used:
+                  {portfolioItem?.tech.map((item, i) => {
+                    console.log("Entered");
+                    return (
+                      <PortfolioTechItem key={i}>{item}</PortfolioTechItem>
+                    );
+                  })}
+                </PortfolioTechList>
+                <PortfolioItemDesc>{portfolioItem?.desc}</PortfolioItemDesc>
               </ContainerColumn>
+              <PBtnContainer>
+                <NavBtnLink to="/portfolio">Back to portfolio</NavBtnLink>
+              </PBtnContainer>
             </PortfolioItemDetails>
           </ContainerRow>
         </ItemContainer>
         <Footer />
       </PageWrapper>
     </>
-  )
+  );
 }
 
-export default ItemPage
+export default ItemPage;
