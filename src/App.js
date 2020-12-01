@@ -8,6 +8,7 @@ import SideBar from "./components/SideBar";
 import React, {useState, useEffect} from 'react'
 import ScrollToTop from "./components/ScrollToTop"
 import ReactGa from "react-ga"
+import { Redirect } from "react-router-dom";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/portfolio" component={Portfolio} exact />
           <Route path="/portfolio/:id" component={ItemPage} />
+          <Redirect to='/' />
         </Switch>
       </Router>
     </>

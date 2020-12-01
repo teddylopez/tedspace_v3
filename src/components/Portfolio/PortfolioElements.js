@@ -11,18 +11,18 @@ export const PageWrapper = styled.div`
   height: 100%;
   min-height: 100%;
   box-shadow: none !important;
-  background: #F2994A;
-  background: -webkit-linear-gradient(left, #F2C94C, #F2994A);
-  background: -o-linear-gradient(left, #F2C94C, #F2994A);
-  background: linear-gradient(to right, #F2C94C, #F2994A);
-`
+  background: #f2994a;
+  background: -webkit-linear-gradient(left, #f2c94c, #f2994a);
+  background: -o-linear-gradient(left, #f2c94c, #f2994a);
+  background: linear-gradient(to right, #f2c94c, #f2994a);
+`;
 export const PortfolioPage = styled.div`
   padding-top: 80px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-`
+`;
 
 export const PortfolioRow = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ export const PortfolioRow = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 
 export const ItemWrapper = styled(LinkR)`
   display: flex;
@@ -59,21 +59,33 @@ export const ItemWrapper = styled(LinkR)`
     width: 100%;
     padding: 8px;
   }
-`
+`;
+
+export const HiddenItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 350px;
+  background: transparent;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.75s ease-in-out 0s;
+`;
 
 export const ItemTitle = styled.h3`
   margin-top: 10px;
   font-size: 21px;
-`
+`;
 
 export const ItemSubtitle = styled.h3`
   font-size: 14px;
-`
+`;
 
 export const ItemPhoto = styled.img`
   width: 80%;
   margin: 0 auto;
-`
+`;
 
 export const ItemContainer = styled.div`
   max-width: 1500px;
@@ -82,7 +94,7 @@ export const ItemContainer = styled.div`
   @media screen and (max-width: 768px) {
     margin: 25% 0 0 0;
   }
-`
+`;
 
 export const ContainerRow = styled.div`
   display: flex;
@@ -93,12 +105,12 @@ export const ContainerRow = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 
 export const ContainerColumn = styled.div`
-display: flex;
-flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const PortfolioItemImg = styled.img`
   max-width: 700px;
@@ -116,7 +128,7 @@ export const PortfolioItemImg = styled.img`
       transform: none;
     }
   }
-`
+`;
 
 export const PortfolioItemDetails = styled.div`
   padding-left: 20px;
@@ -124,36 +136,32 @@ export const PortfolioItemDetails = styled.div`
   @media screen and (max-width: 768px) {
     padding: 5px;
   }
-`
+`;
 
 export const PortfolioItemDesc = styled.div`
   margin: 20px 0;
-`
+`;
 
 export const PortfolioItemTitle = styled.h1`
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 10px;
-`
+`;
 
 export const PortfolioItemSubtitle = styled.h3`
   margin: 10px 0;
-`
+`;
 
 export const PortfolioTechList = styled.ul`
   margin: 0;
   list-style-type: none;
-`
+`;
 
-export const PortfolioTechItem = styled.li`
+export const PortfolioTechItem = styled.li``;
 
-`
-
-export const LinkContainer = styled.a`
-
-`
+export const LinkContainer = styled.a``;
 
 export const PortfolioRepoLink = styled.a`
   text-decoration: none;
   margin-bottom: 10px;
   color: #2962ff;
-`
+`;
