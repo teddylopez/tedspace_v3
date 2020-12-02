@@ -197,7 +197,7 @@ export const portfolioObjFifteen = {
   id: 15,
   name: "tedtracker",
   title: "tedtracker",
-  subtitle: "An enterprise-ready time tracker application",
+  subtitle: "An enterprise-ready time management application",
   image: require("../../images/portfolio/tedtracker.png").default,
   thumbnail: require("../../images/thumbnails/tedtracker-thumb.png").default,
   desc:
