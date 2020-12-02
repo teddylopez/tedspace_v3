@@ -34,9 +34,9 @@ export const portfolioObjThree = {
   image: require("../../images/portfolio/tedsurf.png").default,
   thumbnail: require("../../images/thumbnails/tedsurf-thumb.png").default,
   desc:
-    "It's firing! This simple JavaScript application gives you the surf forecast for two of my favorite surfing destinations. It retrieves data from a mainstream surf forecast provider's API that doesn't seem to be very secure.",
-  tech: ["JavaScript"],
-  url: "https://ted-surfs.herokuapp.com/",
+    "It's firing! This simple desktop and mobile friendly JavaScript application gives you the surf forecast for three of my favorite surfing destinations. It retrieves data from a mainstream surf forecast provider's API that doesn't seem to be very secure.",
+  tech: ["JavaScript", "Responsive Design"],
+  url: "https://surf-c9000.firebaseapp.com/",
   git: "https://github.com/teddylopez/surf",
 };
 
@@ -77,7 +77,7 @@ export const portfolioObjSix = {
   thumbnail: require("../../images/thumbnails/tedtype-thumb.png").default,
   desc: "Keep mashing those keys until you find what you're looking for.",
   tech: ["JavaScript"],
-  url: "https://ted-type.herokuapp.com/",
+  url: "https://type-ahead.firebaseapp.com/",
   git: "https://github.com/teddylopez/type-ahead",
 };
 
@@ -215,8 +215,8 @@ export const portfolioObjSixteen = {
   image: require("../../images/portfolio/covid.png").default,
   thumbnail: require("../../images/thumbnails/covid-thumb.png").default,
   desc:
-    "This data visualization React app uses ChartJS and Leaflet to display worldwide COVID-19 data provided by the disease.sh API. I don't know what to believe anymore!",
-  tech: ["React", "Firebase", "ChartJS", "Leaflet"],
+    "This desktop and mobile friendly data visualization app uses ChartJS and Leaflet to display worldwide COVID-19 data provided by the disease.sh API. I don't know what to believe anymore!",
+  tech: ["React", "Firebase", "ChartJS", "Leaflet", "Responsive design"],
   url: "https://covid-tracker-4acd6.web.app/",
   git: "https://github.com/teddylopez/covid-tracker",
 };
