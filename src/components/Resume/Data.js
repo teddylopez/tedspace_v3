@@ -35,7 +35,7 @@ export const educationOne = {
   company: "Web Development Online Bootcamp",
   time: "February 2017 - September 2017",
   desc:
-    "Immersize frontend and backend web development course. Built projects using Ruby on Rails, and Javascript frameworks Angular and React, including website analytics, APIs, and databases.",
+    "Immersive frontend and backend web development course. Built projects using Ruby on Rails, and Javascript frameworks Angular and React, including website analytics, APIs, and databases.",
 };
 
 export const educationTwo = {
