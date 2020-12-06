@@ -1,14 +1,29 @@
-import React from 'react'
-import {ResumeContainer, ResumeJobWrapper, ResumeH1, ResumeJobTitle, ResumeJobCompany, ResumeJobDesc, IconSpan, ResumeJobTime} from "./ResumeElements"
-import {jobOne, jobTwo, jobThree, jobFour} from "../Resume/Data"
-import JobSection from "./JobSection"
+import React from "react";
+import {
+  ResumeContainer,
+  ResumeJobWrapper,
+  ResumeH1,
+  ResumeJobTitle,
+  ResumeJobCompany,
+  ResumeJobDesc,
+  IconSpan,
+  ResumeJobTime,
+  TrainingLink,
+} from "./ResumeElements";
+import {
+  jobOne,
+  jobTwo,
+  jobThree,
+  jobFour,
+  educationOne,
+  educationTwo,
+} from "../Resume/Data";
+import JobSection from "./JobSection";
 
-function Resume({title, company, time, desc}) {
+function Resume({ title, company, time, desc }) {
   return (
     <ResumeContainer id="experience">
-      <ResumeH1>
-        Experience
-      </ResumeH1>
+      <ResumeH1>Experience</ResumeH1>
 
       <ResumeJobWrapper>
         <JobSection {...jobOne} />
@@ -22,8 +37,83 @@ function Resume({title, company, time, desc}) {
       <ResumeJobWrapper>
         <JobSection {...jobFour} />
       </ResumeJobWrapper>
+
+      <ResumeH1>Education</ResumeH1>
+
+      <ResumeJobWrapper>
+        <JobSection {...educationOne} />
+      </ResumeJobWrapper>
+      <ResumeJobWrapper>
+        <JobSection {...educationTwo} />
+      </ResumeJobWrapper>
+
+      <ResumeH1>Training</ResumeH1>
+      <ResumeJobWrapper>
+        <TrainingLink
+          href="https://www.udemy.com/professional-rails-5-development-course/"
+          target="_blank"
+        >
+          Dissecting Ruby on Rails 5: Become a Professional Developer
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/professional-ruby-on-rails-coding-course/"
+          target="_blank"
+        >
+          Professional Rails Code Along
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/comprehensive-ruby-programming-tutorial/"
+          target="_blank"
+        >
+          Comprehensive Ruby Programming
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/course/ruby-metaprogramming/"
+          target="_blank"
+        >
+          Ruby Metaprogramming - Complete Course
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/react-2nd-edition/"
+          target="_blank"
+        >
+          The Complete React Web Developer Course (with Redux)
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/understand-javascript/"
+          target="_blank"
+        >
+          JavaScript: Understanding the Weird Parts
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/jquery-course"
+          target="_blank"
+        >
+          The Complete jQuery Course: Beginner to Professional
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/ios11-app-development-bootcamp/"
+          target="_blank"
+        >
+          iOS 11 & Swift 4: The Complete iOS App Development Bootkit
+        </TrainingLink>
+        <br />
+        <TrainingLink
+          href="https://www.udemy.com/course/100-days-of-code/"
+          target="_blank"
+        >
+          100 Days of Code - The Complete Python Pro Bootcamp for 2021
+        </TrainingLink>
+      </ResumeJobWrapper>
     </ResumeContainer>
-  )
+  );
 }
 
-export default Resume
+export default Resume;
