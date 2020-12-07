@@ -42,6 +42,10 @@ export const ResumeJobTime = styled.h3`
   margin-bottom: 10px;
 `;
 
+export const TrainingLinkWrapper = styled.div`
+  margin: 10px 0;
+`;
+
 export const TrainingLink = styled.a`
   color: #fff;
   text-decoration: none;
