@@ -211,7 +211,7 @@ export const portfolioObjSixteen = {
   id: 16,
   name: "covid",
   title: "COVID-19 Tracker",
-  subtitle: "This seems fine",
+  subtitle: ":/",
   image: require("../../images/portfolio/covid.png").default,
   thumbnail: require("../../images/thumbnails/covid-thumb.png").default,
   desc:
