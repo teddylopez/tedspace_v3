@@ -11,10 +11,12 @@ export const PageWrapper = styled.div`
   height: 100%;
   min-height: 100%;
   box-shadow: none !important;
-  background: #f2994a;
-  background: -webkit-linear-gradient(left, #f2c94c, #f2994a);
-  background: -o-linear-gradient(left, #f2c94c, #f2994a);
-  background: linear-gradient(to right, #f2c94c, #f2994a);
+  background: linear-gradient(250deg, #f2c94c, #f2994a);
+  background-size: 600% 600%;
+
+  -webkit-animation: Fire 30s ease infinite;
+  -moz-animation: Fire 30s ease infinite;
+  animation: Fire 30s ease infinite;
 `;
 export const PortfolioPage = styled.div`
   padding-top: 80px;

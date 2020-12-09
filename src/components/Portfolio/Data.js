@@ -36,7 +36,7 @@ export const portfolioObjThree = {
   desc:
     "It's firing! This simple desktop and mobile friendly JavaScript application gives you the surf forecast for three of my favorite surfing destinations. It retrieves data from a mainstream surf forecast provider's API that doesn't seem to be very secure.",
   tech: ["JavaScript", "Responsive Design"],
-  url: "https://surf-c9000.firebaseapp.com/",
+  url: "https://ted-surfs.herokuapp.com/",
   git: "https://github.com/teddylopez/surf",
 };
 
