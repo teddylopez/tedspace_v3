@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import { useLocation } from 'react-router-dom'
 import { CgSmileSad } from "react-icons/cg";
 
 export const SideBarContainer = styled.aside`
@@ -36,12 +35,6 @@ export const SideBarWrapper = styled.div`
   height: 80%;
 `;
 
-export const SideBtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 export const SideBarMenu = styled.ul`
   display: flex:
   flex-direction: column;
@@ -65,4 +58,18 @@ export const SideBarRoute = styled(LinkR)`
     color: #c8102e;
     transition: 0.2s ease-in-out;
   }
+`;
+
+export const SideBarLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 70px;
 `;

@@ -5,11 +5,11 @@ import {
   CloseIcon,
   SideBarWrapper,
   SideBarMenu,
-  SideBtnWrap,
   SideBarRoute,
+  SideBarLink,
 } from "./SideBarElements";
 
-function SideBar({isOpen, toggle}) {
+function SideBar({ isOpen, toggle }) {
   return (
     <SideBarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -17,8 +17,26 @@ function SideBar({isOpen, toggle}) {
       </Icon>
       <SideBarWrapper>
         <SideBarMenu>
-          <SideBarRoute to="/" onClick={toggle}>tedlopez</SideBarRoute>
-          <SideBarRoute to="/portfolio" onClick={toggle}>portfolio</SideBarRoute>
+          <SideBarRoute to="/" onClick={toggle}>
+            tedlopez
+          </SideBarRoute>
+          <SideBarRoute to="/portfolio" onClick={toggle}>
+            Portfolio
+          </SideBarRoute>
+          <SideBarLink
+            href="https://github.com/teddylopez"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </SideBarLink>
+          <SideBarLink
+            href="https://www.linkedin.com/in/tedmlopez/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </SideBarLink>
         </SideBarMenu>
       </SideBarWrapper>
     </SideBarContainer>
