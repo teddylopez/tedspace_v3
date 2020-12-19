@@ -8,23 +8,23 @@ import {
 import ItemSection from "./ItemSection";
 import Footer from "../../components/Footer";
 import {
-  portfolioObjOne,
-  portfolioObjTwo,
-  portfolioObjThree,
-  portfolioObjFour,
-  portfolioObjFive,
-  portfolioObjSix,
-  portfolioObjSeven,
-  portfolioObjEight,
-  portfolioObjNine,
-  portfolioObjTen,
-  portfolioObjEleven,
-  portfolioObjTwelve,
-  portfolioObjThirteen,
-  portfolioObjFourteen,
-  portfolioObjFifteen,
-  portfolioObjSixteen,
-  portfolioObjSeventeen,
+  pitcherTrendsObj,
+  amazonObj,
+  tedSurfObj,
+  monthlyVueObj,
+  depthChartObj,
+  tedTypeObj,
+  teddygramsObj,
+  tednessObj,
+  tedTalksObj,
+  beatsByTedObj,
+  tedmetricsObj,
+  tedWeathermanObj,
+  tedspaceObj,
+  tedspaceReactObj,
+  tedtrackerObj,
+  covidTrackerObj,
+  trailerHitchObj,
   portfolioObjEighteen,
 } from "./Data";
 
@@ -35,77 +35,45 @@ function Portfolio() {
         <PortfolioPage>
           <PortfolioRow>
             <ItemSection
-              {...portfolioObjSixteen}
-              portfolio_object={portfolioObjSixteen}
+              {...covidTrackerObj}
+              portfolio_object={covidTrackerObj}
             />
             <ItemSection
-              {...portfolioObjOne}
-              portfolio_object={portfolioObjOne}
+              {...pitcherTrendsObj}
+              portfolio_object={pitcherTrendsObj}
             />
-            <ItemSection
-              {...portfolioObjThree}
-              portfolio_object={portfolioObjThree}
-            />
+            <ItemSection {...tedSurfObj} portfolio_object={tedSurfObj} />
           </PortfolioRow>
           <PortfolioRow>
             <ItemSection
-              {...portfolioObjFifteen}
-              portfolio_object={portfolioObjFifteen}
+              {...trailerHitchObj}
+              portfolio_object={trailerHitchObj}
             />
+            <ItemSection {...tedtrackerObj} portfolio_object={tedtrackerObj} />
+            <ItemSection {...amazonObj} portfolio_object={amazonObj} />
+            <ItemSection {...depthChartObj} portfolio_object={depthChartObj} />
+          </PortfolioRow>
+          <PortfolioRow>
+            <ItemSection {...tedTalksObj} portfolio_object={tedTalksObj} />
+            <ItemSection {...tedspaceObj} portfolio_object={tedspaceObj} />
             <ItemSection
-              {...portfolioObjTwo}
-              portfolio_object={portfolioObjTwo}
-            />
-            <ItemSection
-              {...portfolioObjFive}
-              portfolio_object={portfolioObjFive}
-            />
-            <ItemSection
-              {...portfolioObjFourteen}
-              portfolio_object={portfolioObjFourteen}
+              {...tedspaceReactObj}
+              portfolio_object={tedspaceReactObj}
             />
           </PortfolioRow>
           <PortfolioRow>
+            <ItemSection {...beatsByTedObj} portfolio_object={beatsByTedObj} />
+            <ItemSection {...tedmetricsObj} portfolio_object={tedmetricsObj} />
+            <ItemSection {...tednessObj} portfolio_object={tednessObj} />
             <ItemSection
-              {...portfolioObjNine}
-              portfolio_object={portfolioObjNine}
-            />
-            <ItemSection
-              {...portfolioObjThirteen}
-              portfolio_object={portfolioObjThirteen}
-            />
-            <ItemSection
-              {...portfolioObjEight}
-              portfolio_object={portfolioObjEight}
+              {...tedWeathermanObj}
+              portfolio_object={tedWeathermanObj}
             />
           </PortfolioRow>
           <PortfolioRow>
-            <ItemSection
-              {...portfolioObjTen}
-              portfolio_object={portfolioObjTen}
-            />
-            <ItemSection
-              {...portfolioObjEleven}
-              portfolio_object={portfolioObjEleven}
-            />
-            <ItemSection
-              {...portfolioObjTwelve}
-              portfolio_object={portfolioObjTwelve}
-            />
-          </PortfolioRow>
-          <PortfolioRow>
-            <ItemSection
-              {...portfolioObjFour}
-              portfolio_object={portfolioObjFour}
-            />
-            <ItemSection
-              {...portfolioObjSix}
-              portfolio_object={portfolioObjSix}
-            />
-            <ItemSection
-              {...portfolioObjSeven}
-              portfolio_object={portfolioObjSeven}
-            />
+            <ItemSection {...monthlyVueObj} portfolio_object={monthlyVueObj} />
+            <ItemSection {...tedTypeObj} portfolio_object={tedTypeObj} />
+            <ItemSection {...teddygramsObj} portfolio_object={teddygramsObj} />
           </PortfolioRow>
         </PortfolioPage>
         <Footer />

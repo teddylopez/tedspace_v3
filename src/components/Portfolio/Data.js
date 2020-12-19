@@ -1,4 +1,4 @@
-export const portfolioObjOne = {
+export const pitcherTrendsObj = {
   id: 1,
   name: "pitcher_trends",
   title: "Pitcher Trends",
@@ -12,7 +12,7 @@ export const portfolioObjOne = {
   git: "https://github.com/teddylopez/pitcher_trends",
 };
 
-export const portfolioObjTwo = {
+export const amazonObj = {
   id: 2,
   name: "amazon",
   title: "Amazon",
@@ -26,7 +26,7 @@ export const portfolioObjTwo = {
   git: "https://github.com/teddylopez/amazon-clone",
 };
 
-export const portfolioObjThree = {
+export const tedSurfObj = {
   id: 3,
   name: "tedsurf",
   title: "TedSurf",
@@ -40,7 +40,7 @@ export const portfolioObjThree = {
   git: "https://github.com/teddylopez/surf",
 };
 
-export const portfolioObjFour = {
+export const monthlyVueObj = {
   id: 4,
   name: "monthlyvue",
   title: " monthlyVue",
@@ -54,7 +54,7 @@ export const portfolioObjFour = {
   git: "https://github.com/teddylopez/monthly-vue",
 };
 
-export const portfolioObjFive = {
+export const depthChartObj = {
   id: 5,
   name: "depth_chart",
   title: "Depth Chart",
@@ -68,7 +68,7 @@ export const portfolioObjFive = {
   git: "https://github.com/teddylopez/depth-chart",
 };
 
-export const portfolioObjSix = {
+export const tedTypeObj = {
   id: 6,
   name: "tedtype",
   title: "TedType",
@@ -81,7 +81,7 @@ export const portfolioObjSix = {
   git: "https://github.com/teddylopez/type-ahead",
 };
 
-export const portfolioObjSeven = {
+export const teddygramsObj = {
   id: 7,
   name: "teddygrams",
   title: "teddygrams",
@@ -95,7 +95,7 @@ export const portfolioObjSeven = {
   git: "https://github.com/teddylopez/teddygrams",
 };
 
-export const portfolioObjEight = {
+export const tednessObj = {
   id: 8,
   name: "tedness",
   title: "tedness",
@@ -109,7 +109,7 @@ export const portfolioObjEight = {
   git: "https://github.com/teddylopez/tedness",
 };
 
-export const portfolioObjNine = {
+export const tedTalksObj = {
   id: 9,
   name: "tedtalks",
   title: "Ted Talks",
@@ -123,7 +123,7 @@ export const portfolioObjNine = {
   git: "https://github.com/teddylopez/portfolio",
 };
 
-export const portfolioObjTen = {
+export const beatsByTedObj = {
   id: 10,
   name: "beatsbyted",
   title: "BeatsByTed",
@@ -136,7 +136,7 @@ export const portfolioObjTen = {
   git: "https://github.com/teddylopez/drum-kit",
 };
 
-export const portfolioObjEleven = {
+export const tedmetricsObj = {
   id: 11,
   name: "tedmetrics",
   title: "tedmetrics",
@@ -150,7 +150,7 @@ export const portfolioObjEleven = {
   git: "https://github.com/teddylopez/tedmetrics",
 };
 
-export const portfolioObjTwelve = {
+export const tedWeathermanObj = {
   id: 12,
   name: "ted_weatherman",
   title: "Ted Weatherman",
@@ -164,7 +164,7 @@ export const portfolioObjTwelve = {
   git: "https://github.com/teddylopez/weatherman",
 };
 
-export const portfolioObjThirteen = {
+export const tedspaceObj = {
   id: 13,
   name: "tedspace",
   title: "tedspace",
@@ -178,7 +178,7 @@ export const portfolioObjThirteen = {
   git: "https://github.com/teddylopez/tedspace",
 };
 
-export const portfolioObjFourteen = {
+export const tedspaceReactObj = {
   id: 14,
   name: "tedspace-react",
   title: "tedspace-react",
@@ -193,7 +193,7 @@ export const portfolioObjFourteen = {
   git: "https://github.com/teddylopez/tedspace_v3",
 };
 
-export const portfolioObjFifteen = {
+export const tedtrackerObj = {
   id: 15,
   name: "tedtracker",
   title: "tedtracker",
@@ -207,7 +207,7 @@ export const portfolioObjFifteen = {
   git: "https://github.com/teddylopez/tedtracker",
 };
 
-export const portfolioObjSixteen = {
+export const covidTrackerObj = {
   id: 16,
   name: "covid",
   title: "COVID-19 Tracker",
@@ -221,17 +221,18 @@ export const portfolioObjSixteen = {
   git: "https://github.com/teddylopez/covid-tracker",
 };
 
-export const portfolioObjSeventeen = {
+export const trailerHitchObj = {
   id: 17,
-  name: "",
-  title: "",
-  subtitle: "",
-  image: false,
-  thumbnail: false,
-  desc: "",
-  tech: [],
-  url: "",
-  git: "",
+  name: "trailer_hitch",
+  title: "trailer_hitch",
+  subtitle: "I need a new toy!",
+  image: require("../../images/portfolio/trailerhitch.png").default,
+  thumbnail: require("../../images/thumbnails/trailerhitch-thumb.png").default,
+  desc:
+    "trailer_hitch is a Ruby on Rails application that scrapes the popular vehicle auction website bringatrailer.com. I built a basic frontend to view upcoming auctions, but the primary purpose of the app is to compile them in an email that gets sent to my inbox every morning and evening when there are listings that expire within the next 12 hours that are under a certain pricepoint.",
+  tech: ["Ruby on Rails"],
+  url: "https://trailerhitch.herokuapp.com/",
+  git: "https://github.com/teddylopez/trailer_hitch",
 };
 
 export const portfolioObjEighteen = {
