@@ -54,12 +54,6 @@ function Contact() {
           name="from_email"
           placeholder="Email"
         />
-        <ContactInputField
-          required
-          type="text"
-          name="subject"
-          placeholder="Subject"
-        />
         <ContactInputTextArea required name="message" placeholder="..." />
         <ContactBtn type="submit">Send Complaint</ContactBtn>
       </ContactForm>

@@ -20,7 +20,7 @@ export const amazonObj = {
   image: require("../../images/portfolio/amazon.png").default,
   thumbnail: require("../../images/thumbnails/amazon-thumb.png").default,
   desc:
-    "This is a basic functionality ecommerce website built using React for the frontend, Firebase for the backend database, and stripe for payment processing. I built it primarily to learn and practice basic frontend development and stylin with React",
+    "This is a basic functionality ecommerce website built using React for the frontend, Firebase for the backend database, and stripe for payment processing. I built it primarily to learn and practice basic frontend development and styling with React",
   tech: ["React", "Firebase", "Stripe"],
   url: "https://fir-6bf26.web.app/",
   git: "https://github.com/teddylopez/amazon-clone",
