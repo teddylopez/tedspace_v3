@@ -25,7 +25,7 @@ import {
   tedtrackerObj,
   covidTrackerObj,
   trailerHitchObj,
-  portfolioObjEighteen,
+  statLines,
 } from "./Data";
 
 function Portfolio() {
@@ -34,6 +34,10 @@ function Portfolio() {
       <PageWrapper>
         <PortfolioPage>
           <PortfolioRow>
+          <ItemSection
+            {...statLines}
+            portfolio_object={statLines}
+          />
             <ItemSection
               {...covidTrackerObj}
               portfolio_object={covidTrackerObj}

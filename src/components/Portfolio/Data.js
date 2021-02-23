@@ -235,15 +235,15 @@ export const trailerHitchObj = {
   git: "https://github.com/teddylopez/trailer_hitch",
 };
 
-export const portfolioObjEighteen = {
+export const statLines = {
   id: 18,
-  name: "",
-  title: "",
-  subtitle: "",
-  image: false,
-  thumbnail: false,
-  desc: "",
-  tech: [],
-  url: "",
-  git: "",
+  name: "stat_lines",
+  title: "Stat Lines",
+  subtitle: "Good day at the plate",
+  image: require("../../images/portfolio/statlines.png").default,
+  thumbnail: require("../../images/thumbnails/statlines-thumb.png").default,
+  desc: "Stat Lines is a basic JavaScript application that displays baseball player stats for a given game. Data is initially fetched from the backend on page-load, and uses 'infinite scrolling' that fetches more data when a user scrolls to the bottom of the table. The stat table itself is a reusable component that has the flexibilty to render different stat types depending on the player.",
+  tech: ["React", "Node.js", "Postgresql"],
+  url: "https://stat-lines.herokuapp.com/",
+  git: "https://github.com/teddylopez/stat-lines",
 };
