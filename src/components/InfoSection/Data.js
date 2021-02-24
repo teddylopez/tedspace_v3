@@ -23,7 +23,7 @@ export const homeObjTwo = {
   topLine: "Skills",
   headline: "TECHNICAL SKILLS",
   description:
-    "HTML, CSS, responsive design, JavaScript, Angular/React/Vue frameworks/libraries, Swift, Ruby on Rails, Python, data visualization, Git, frontend and backend experience, Adobe Photoshop, Illustrator, Eloqua, Salesforce, Sitecore, Google Analytics, Webtrends, Windows, Mac OS, Linux, Firebase, MySQL, Postgresql",
+    "HTML, CSS, responsive design, JavaScript, Angular/React/Vue frameworks/libraries, Node.js, Swift, Ruby on Rails, Python, data visualization, Git, frontend and backend experience, Adobe Photoshop, Illustrator, Eloqua, Salesforce, Sitecore, Google Analytics, Webtrends, Windows, Mac OS, Linux, Firebase, MySQL, Postgresql",
   imgStart: true,
   img: require("../../images/mission_impossible.svg").default,
   alt: "car",
