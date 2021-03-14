@@ -30,14 +30,14 @@ export const tedSurfObj = {
   id: 3,
   name: "tedsurf",
   title: "TedSurf",
-  subtitle: "A JavaScript surf report application",
+  subtitle: "A Vue.js surf report application",
   image: require("../../images/portfolio/tedsurf.png").default,
   thumbnail: require("../../images/thumbnails/tedsurf-thumb.png").default,
   desc:
-    "It's firing! This simple desktop and mobile friendly JavaScript application gives you the surf forecast for three of my favorite surfing destinations. It retrieves data from a mainstream surf forecast provider's API that doesn't seem to be very secure.",
-  tech: ["JavaScript", "Responsive Design"],
-  url: "https://ted-surfs.herokuapp.com/",
-  git: "https://github.com/teddylopez/surf",
+    "It's firing! This simple desktop and mobile friendly Vue.js application gives you the surf forecast for three of my favorite surfing destinations. It retrieves data from a mainstream surf forecast provider's API that doesn't seem to be very secure.",
+  tech: ["Vue.js", "JavaScript", "Responsive Design"],
+  url: "https://surf-vue.herokuapp.com/",
+  git: "https://github.com/teddylopez/vue-surf",
 };
 
 export const monthlyVueObj = {
@@ -242,7 +242,8 @@ export const statLines = {
   subtitle: "Good day at the plate",
   image: require("../../images/portfolio/statlines.png").default,
   thumbnail: require("../../images/thumbnails/statlines-thumb.png").default,
-  desc: "Stat Lines is a basic JavaScript application that displays baseball player stats for a given game. Data is initially fetched from the backend on page-load, and uses 'infinite scrolling' that fetches more data when a user scrolls to the bottom of the table. The stat table itself is a reusable component that has the flexibilty to render different stat types depending on the player.",
+  desc:
+    "Stat Lines is a basic JavaScript application that displays baseball player stats for a given game. Data is initially fetched from the backend on page-load, and uses 'infinite scrolling' that fetches more data when a user scrolls to the bottom of the table. The stat table itself is a reusable component that has the flexibilty to render different stat types depending on the player.",
   tech: ["React", "Node.js", "Postgresql"],
   url: "https://stat-lines.herokuapp.com/",
   git: "https://github.com/teddylopez/stat-lines",
