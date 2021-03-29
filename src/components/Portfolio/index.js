@@ -34,10 +34,7 @@ function Portfolio() {
       <PageWrapper>
         <PortfolioPage>
           <PortfolioRow>
-          <ItemSection
-            {...statLines}
-            portfolio_object={statLines}
-          />
+            <ItemSection {...statLines} portfolio_object={statLines} />
             <ItemSection
               {...covidTrackerObj}
               portfolio_object={covidTrackerObj}
@@ -46,7 +43,7 @@ function Portfolio() {
               {...pitcherTrendsObj}
               portfolio_object={pitcherTrendsObj}
             />
-            { /* <ItemSection {...tedSurfObj} portfolio_object={tedSurfObj} /> */}
+            <ItemSection {...tedSurfObj} portfolio_object={tedSurfObj} />
           </PortfolioRow>
           <PortfolioRow>
             <ItemSection
