@@ -113,6 +113,14 @@ function Resume({ title, company, time, desc }) {
         </TrainingLinkWrapper>
         <TrainingLinkWrapper>
           <TrainingLink
+            href="https://www.udemy.com/course/the-complete-elixir-and-phoenix-bootcamp-and-tutorial/"
+            target="_blank"
+          >
+            The Complete Elixir and Phoenix Bootcamp
+          </TrainingLink>
+        </TrainingLinkWrapper>
+        <TrainingLinkWrapper>
+          <TrainingLink
             href="https://www.udemy.com/ios11-app-development-bootcamp/"
             target="_blank"
           >
