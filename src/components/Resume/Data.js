@@ -1,7 +1,15 @@
+export const jobFive = {
+  title: "Software Developer, Baseball Systems — Baseball Operations",
+  company: "Tampa Bay Rays",
+  time: "May 2021 – Present",
+  desc:
+    "Design and develop web applications in support of the Tampa Bay Rays Major League Baseball team.",
+};
+
 export const jobOne = {
   title: "Developer, Baseball Research & Development",
   company: "Washington Nationals Baseball Club",
-  time: "June 2018 – Present",
+  time: "June 2018 – November 2020",
   desc:
     "Design and develop web applications in support of the Baseball R&D department and the Washington Nationals. Build and maintain private internal website used for player analysis, MLB draft, scouting reports, trade inquiries, and game video and data. Frontend built using Ruby on Rails and JavaScript with Postgresql backend database.",
 };
@@ -17,7 +25,7 @@ export const jobTwo = {
 export const jobThree = {
   title: "International Affairs Associate",
   company: "Abt Associates",
-  time: "March 2014 – May 2014",
+  time: "March 2013 – May 2014",
   desc:
     "International affairs associate and data analyst at one of the largest for-profit government and business research and consulting firms in the world. Balanced program budgets and reported costs while managing organized and up-to-date spreadsheets of project-related data. One of the primary point-of-contacts for two of Abt’s largest international conferences (including airfares, hotel arrangements, passports/visas arrangements), as well as event scheduling and technical day-of support.",
 };

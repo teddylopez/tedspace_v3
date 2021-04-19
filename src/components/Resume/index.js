@@ -16,6 +16,7 @@ import {
   jobTwo,
   jobThree,
   jobFour,
+  jobFive,
   educationOne,
   educationTwo,
 } from "../Resume/Data";
@@ -26,6 +27,9 @@ function Resume({ title, company, time, desc }) {
     <ResumeContainer id="experience">
       <ResumeH1>Experience</ResumeH1>
 
+      <ResumeJobWrapper>
+        <JobSection {...jobFive} />
+      </ResumeJobWrapper>
       <ResumeJobWrapper>
         <JobSection {...jobOne} />
       </ResumeJobWrapper>
